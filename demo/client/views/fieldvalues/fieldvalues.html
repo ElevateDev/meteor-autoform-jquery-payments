@@ -1,0 +1,12 @@
+<template name="rangeSlider">
+  {{#if Template.subscriptionsReady}}
+    {{#autoForm collection="Collection" type=action doc=editDoc id="collectionId" autosave=true}}
+      <fieldset>
+        {{> afQuickField name='creditCard'}}
+        {{> afQuickField name='cvc'}}
+        {{> afQuickField name='expiration'}}
+      </fieldset>
+      <button type="submit" class="btn btn-primary">{{action}}</button>
+    {{/autoForm}}
+  {{/if}}
+</template>
