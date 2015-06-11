@@ -81,4 +81,5 @@ Template.afCreditCardExpiry.rendered = function () {
  *  BOOTSTRAP THEME
  */
 Template.afCreditCard.copyAs('afCreditCard_bootstrap3');
-Template.afCVC.copyAs('afCVC_bootstrap3');
+Template.afCreditCardCVC.copyAs('afCreditCardCVC_bootstrap3');
+Template.afCreditCardExpiry.copyAs('afCreditCardExpiry_bootstrap3');
