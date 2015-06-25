@@ -24,7 +24,7 @@ Template.rangeSlider.helpers({
 
 AutoForm.hooks({
   "collectionId": {
-    onError: function(e){
+    onError: function(type,e){
       console.error( e );
     },
     onSuccess: function(){

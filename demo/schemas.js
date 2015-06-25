@@ -3,19 +3,22 @@ CollectionSchema = new SimpleSchema({
     type: String,
     autoform: {
       type: "payments/creditCard"
-    }
+    },
+    custom: PaymentsHelpers.CreditCardValidation
   },
   cvc: {
     type: String,
     autoform: {
       type: "payments/creditCardCVC"
-    }
+    },
+    custom: PaymentsHelpers.CVCValidation
   },
   expiration: {
     type: String,
     autoform: {
       type: "payments/creditCardExpiry"
-    }
+    },
+    custom: PaymentsHelpers.CCExpiryValidation
   },
 });
 
