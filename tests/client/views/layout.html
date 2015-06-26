@@ -1,0 +1,17 @@
+<template name="layout">
+  {{> header}}
+  <div class="container">
+    {{> yield}}
+  </div>
+</template>
+
+<template name="header">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{{pathFor 'home'}}">AutoForm Jquery Payments Demo</a>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+</template>
