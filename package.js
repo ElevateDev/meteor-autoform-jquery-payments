@@ -1,7 +1,7 @@
 Package.describe({
   name: 'elevatedevdesign:autoform-jquery-payments',
   summary: 'Autoform package for jquery payments fields',
-  version: '0.0.4',
+  version: '0.0.5',
   git: 'https://github.com/ElevateDevelopmentAndDesign/meteor-autoform-jquery-payments'
 });
 
