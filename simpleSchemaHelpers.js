@@ -14,7 +14,7 @@ PaymentsHelpers.CVCValidation = function(){
 
 PaymentsHelpers.CCExpiryValidation = function(){
   var vals = this.value.split('/');
-  if( Meteor.isClient && (vals.length > 1 || !$.payment.validateCardExpiry(vals[0], vals[1])) ){
+  if( Meteor.isClient && (vals.length !== 2 || !$.payment.validateCardExpiry(vals[0], vals[1])) ){
     return "payments/CardExpiry_Invalid";
   }
 };
